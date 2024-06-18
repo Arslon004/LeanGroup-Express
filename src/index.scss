@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1168px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-lg{
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+button{
+  border: none;
+}
+.dark *{
+ background-color: black !important;
+ color:  #fff !important;
+}

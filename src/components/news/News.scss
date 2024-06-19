@@ -1,5 +1,5 @@
 .news__container{
- padding-top: 40px;
+ padding-top: 80px;
  padding-bottom: 44px;
 
  &--title{
@@ -50,6 +50,7 @@ text-align: start;
 
 @media screen and (max-width:1150px){
   .news__container{
+    padding-top: 20px;
     &--row{
       display: grid;
       grid-template-columns: repeat(2,1fr);

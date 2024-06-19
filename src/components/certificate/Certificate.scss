@@ -1,27 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.certificate {
+  padding-top: 56px;
+  position: relative;
+  margin-bottom: 48px;
 
-.certificate{
- padding-top: 48px;
-  &__title{
+  &__title {
     margin-bottom: 16px;
-font-family: Montserrat;
-font-size: 32px;
-font-weight: 600;
-line-height: 40px;
-text-align: center;
- span{
-  color: rgba(239, 124, 0, 1);
- }
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    span {
+      color: rgba(239, 124, 0, 1);
+    }
   }
-}
-.slick-slide {
-  display: flex;
-  justify-content: center;
-}
 
-.slick-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto; /* Rasmni markazga o'tkazish */
+  .slick-slider {
+    text-align: center;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+    justify-content: center; /* Center the images */
+    align-items: center;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center; /* Center the images */
+    align-items: center;
+    padding: 10px;
+  }
+  .slick-track{
+    div{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  button.slick-arrow.slick-prev::before,
+  button.slick-arrow.slick-next::before {
+    display: none;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: rgba(239, 124, 0, 1);
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: #fff;
+    border: 3px solid rgba(239, 124, 0, 1);
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active button:before {
+    background-color: rgba(239, 124, 0, 1);
+    color: rgba(239, 124, 0, 1);
+  }
 }

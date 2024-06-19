@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.navbar{
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.navbar {
   padding-top: 13px;
   padding-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 
-
-  &__menus{
+  &__menus {
     max-width: 828px;
-    &__list{
+
+    &__list {
       display: flex;
 
-      span{
+      span {
         margin-left: 16px;
         margin-right: 16px;
       }
     }
 
-    &__link{
+    &__link {
       padding-top: 10.5px;
       padding-bottom: 10.5px;
       font-family: Montserrat;
@@ -28,37 +36,42 @@
       line-height: 24px;
       text-align: left;
       color: rgba(44, 45, 46, 1);
-      &:hover{
-      color: rgba(239, 124, 0, 1);
+
+      &:hover {
+        color: rgba(239, 124, 0, 1);
       }
     }
-    @media only screen and (max-width:1050px){
-      &{
+
+    @media only screen and (max-width: 1050px) {
+      & {
         display: none;
       }
     }
   }
 
-  &__btn{
-    &__darklight{
+  &__btn {
+    &__darklight {
       margin-right: 20px;
       font-size: 20px;
       font-weight: bold;
     }
-    .hamburger{
+
+    .hamburger {
       display: none;
     }
-    @media only screen and (max-width:1050px){
-      .hamburger{
+
+    @media only screen and (max-width: 1050px) {
+      .hamburger {
         display: inline-block;
       }
     }
-    button{
+
+    button {
       background-color: transparent;
       cursor: pointer;
 
-      &{
-        img{
+      & {
+        img {
           background-color: rgba(0, 0, 0, 0.4);
           transform: scale(1.4);
         }
@@ -67,8 +80,9 @@
   }
 }
 
-.navbar__responsive{
+.navbar__responsive {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: -100%;
   bottom: 0;
@@ -77,16 +91,26 @@
   justify-content: center;
   background-color: black;
   width: 100% !important;
-  &__link{
+
+  &__link {
     font-size: 20px;
-   text-transform: uppercase;
-   color: #fff;
+    text-transform: uppercase;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 24px;
   }
 
-  &_item{
+  &_item {
     margin: 30px 0;
   }
-  .navbar__close{
+
+  .navbar__close {
     position: absolute;
     top: 40px;
     right: 40px;

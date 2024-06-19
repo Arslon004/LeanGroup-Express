@@ -1,0 +1,12 @@
+.backtop{
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    padding: 24px ;
+    background-color: rgba(239, 124, 0, 1);
+    border-radius: 50%;
+    box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+    img{
+      transform: scale(3);
+    }
+}

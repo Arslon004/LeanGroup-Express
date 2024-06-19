@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.product {
+  &_header {
+    margin-bottom: 16px;
+    h1 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 16px;
+      span {
+        color: rgba(239, 124, 0, 1);
+      }
+    }
+  }
+
+  &_body {
+    .react-tabs__tab-panel--selected {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      @media screen and (max-width:500px){
+        justify-content: center;
+      }
+
+
+      @media screen and (max-width:1000px){
+           gap: 30px;
+       }
+    }
+  }
+
+  &_footer {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    button {
+      border: none;
+      font-size: 15px;
+      line-height: 20px;
+      color: rgba(239, 124, 0, 1);
+      border: 1px solid rgba(239, 124, 0, 1);
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.6s linear all;
+      &:hover {
+        background-color: rgba(239, 124, 0, 1);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.react-tabs {
+  position: relative;
+
+  &__tab-list {
+    display: flex;
+    justify-content: center; /* Center the tabs */
+    padding: 5px;
+    border: none;
+    @media screen and (max-width: 950px) {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &__tab {
+    padding: 8px 13px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    color: rgba(239, 124, 0, 1);
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    transition: all 0.6s ease;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      background-color: rgba(239, 124, 0, 1);
+      color: #fff;
+    }
+
+    &.react-tabs__tab--selected {
+      background-color: rgba(239, 124, 0, 1);
+      color: #fff;
+    }
+  }
+
+  &__tab + &__tab {
+    margin-left: 24px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  // &__tab-panel--selected {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   img {
+  //     margin: 0;
+  //   }
+  //  @media screen and (max-width:1000px){
+  //   gap: 20px;
+  //  }
+  // }
+}

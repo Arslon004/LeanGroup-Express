@@ -5,7 +5,9 @@
 *,*::before,*::after{
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .container{
   max-width: 1168px;
   padding-left: 20px;

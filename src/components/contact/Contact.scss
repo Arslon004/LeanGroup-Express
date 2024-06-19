@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact_container{
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+.contact{
+  position: relative;
+  box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+
+  &__information{
+    position: absolute;
+    top:24px;
+    left: 20px;
+
+    &--title{
+      margin-bottom: 16px;
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 600;
+line-height: 40px;
+text-align: left;
+span{
+  color: rgba(239, 124, 0, 1);
+
+}
+    }
+
+    &--text{
+      margin-bottom: 24px;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+max-width: 400px;
+    }
+
+    &--input{
+
+      .input__group{
+
+        &__top{
+          display: flex;
+          gap: 12px;
+          margin-bottom: 12px;
+        }
+
+        &--left,&--right{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            max-width: 100%;
+            cursor: pointer;
+          }
+          input{
+            padding-left: 10px;
+            outline: none;
+            height: 40px;
+            border: 1px solid rgba(0, 16, 61, 0.12)
+          }
+        }
+
+        &__bottom{
+          textarea{
+            margin-bottom: 12px;
+          width: 440px;
+          padding: 10px;
+          outline: none;
+          resize: vertical;
+          border: 1px solid rgba(0, 16, 61, 0.12)
+         }
+        }
+      }
+    }
+
+    &--btn{
+      padding: 10px 20px;
+      background: rgba(239, 124, 0, 1);
+      color: #fff;
+      display: inline-block;
+    text-align: center;
+      cursor: pointer;
+      transition: 1s linear transform;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1150px) {
+ .contact__image{
+  img{
+    max-width: 100%;
+  }
+ }
+ .contact__information{
+  top: 0;
+  left: 5px;
+
+  &--btn{
+    padding: 5px 10px;
+  }
+ }
+}
+@media screen and (max-width:870px) {
+ .contact__information{
+  &--btn{
+    position: absolute;
+    padding: 4px 8px;
+    font-size: 10px;
+    bottom: 20px;
+    left: 60%;
+  }
+  &--title{
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  &--text{
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .input__group__top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input__group--left,.input__group--right{
+    input{
+      height: 25px;
+    }
+    img{
+      height: 25px;
+    }
+  }
+  textarea{
+   max-width: 200px;
+  }
+ }
+}
+
+@media screen and (max-width:450px) {
+.contact__information{
+  &--btn{
+    padding: 1px;
+    width: 80px;
+    left: 80%;
+  }
+}
+.contact_container{
+  padding-bottom: 80px;
+}
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import logo from "../../assets/images/logo.svg";
-import dark from "../../assets/images/moon.svg";
 import menu from "../../assets/images/menu.svg";
 import close from "../../assets/images/close.svg";
 
@@ -25,14 +24,19 @@ export class Header extends Component {
     this.setState({ dark: !this.state.dark });
   };
 
+  scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    this.closeNavbar();
+  };
+
   render() {
     return (
-      <section>
+      <header>
         <div className="container">
           <nav className="navbar">
             <div className="navbar__logo">
               <a href="#logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Logo" />
               </a>
             </div>
             <div className="navbar__menus">
@@ -78,25 +82,25 @@ export class Header extends Component {
           <nav id="navbar__responsive" className="navbar__responsive">
             <ul className="navbar__responsive_list">
               <li className="navbar__responsive_item">
-                <a href="#home" className="navbar__responsive__link">Продукция</a>
+                <button onClick={() => this.scrollToSection('home')} className="navbar__responsive__link">Продукция</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#certificate" className="navbar__responsive__link">Сертификаты</a>
+                <button onClick={() => this.scrollToSection('certificate')} className="navbar__responsive__link">Сертификаты</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#community" className="navbar__responsive__link">Наша команда</a>
+                <button onClick={() => this.scrollToSection('community')} className="navbar__responsive__link">Наша команда</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#about" className="navbar__responsive__link">О нас</a>
+                <button onClick={() => this.scrollToSection('about')} className="navbar__responsive__link">О нас</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#news" className="navbar__responsive__link">Новости</a>
+                <button onClick={() => this.scrollToSection('news')} className="navbar__responsive__link">Новости</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#product" className="navbar__responsive__link">Вакансии</a>
+                <button onClick={() => this.scrollToSection('product')} className="navbar__responsive__link">Вакансии</button>
               </li>
               <li className="navbar__responsive_item">
-                <a href="#contact" className="navbar__responsive__link">Контакты</a>
+                <button onClick={() => this.scrollToSection('contact')} className="navbar__responsive__link">Контакты</button>
               </li>
             </ul>
             <button onClick={this.closeNavbar} id="navbar-close" className="navbar__close">
@@ -104,7 +108,7 @@ export class Header extends Component {
             </button>
           </nav>
         </div>
-      </section>
+      </header>
     );
   }
 }

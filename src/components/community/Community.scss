@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.community__container{
+ padding-top: 40px;
+ padding-bottom: 40px;
+
+ &--title{
+  margin-bottom: 16px;
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 600;
+line-height: 40px;
+text-align: center;
+color: rgba(44, 45, 46, 1);
+span{
+  color:rgba(239, 124, 0, 1)
+}
+ }
+
+ &--slick{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin:0 auto 12px;
+    border-radius: 50%;
+  }
+  &--title{
+    margin-bottom: 4px;
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+color: rgba(44, 45, 46, 1);
+  }
+ &--text{
+    margin-bottom: 12px;
+   color: rgba(145, 147, 153, 1);
+  }
+  &--tel{
+    margin-bottom: 8px;
+  }
+  &--tel,&--email,&--text{
+font-family: Montserrat;
+font-size: 13px;
+font-weight: 500;
+line-height: 13px;
+text-align: center;
+  }
+
+ }
+ .button.slick-arrow.slick-next{
+  display: none;
+ }
+ .slick-dots li button:before {
+  color:#fff;
+  border: 2px solid rgba(239, 124, 0, 1);
+  border-radius: 50%;
+ }
+ .slick-dots li.slick-active button:before{
+  color: rgba(239, 124, 0, 1);
+  background-color: rgba(239, 124, 0, 1);
+ }
+ &--btn{
+  margin-top: 42px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+ }
+}

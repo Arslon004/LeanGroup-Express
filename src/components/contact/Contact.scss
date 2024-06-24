@@ -47,6 +47,7 @@ max-width: 400px;
 
         &--left,&--right{
           display: flex;
+          font-family: Montserrat;
           align-items: center;
           justify-content: center;
           img{
@@ -55,6 +56,7 @@ max-width: 400px;
           }
           input{
             padding-left: 10px;
+            font-family: Montserrat;
             outline: none;
             height: 40px;
             border: 1px solid rgba(0, 16, 61, 0.12)
@@ -63,7 +65,8 @@ max-width: 400px;
 
         &__bottom{
           textarea{
-            margin-bottom: 12px;
+          margin-bottom: 12px;
+          font-family: Montserrat;
           width: 440px;
           padding: 10px;
           outline: none;

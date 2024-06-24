@@ -9,7 +9,7 @@ import "./Footer.scss";
 export class Footer extends Component {
   render() {
     return (
-      <footer className='container-lg '>
+      <footer >
         <div className="container footer_container">
           <div className="footer_container--header">
             <a href="#logo"><img src={logo} alt="" /></a>
